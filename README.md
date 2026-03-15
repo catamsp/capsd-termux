@@ -31,7 +31,7 @@ Transform your default Termux environment into a powerful, stylish, and highly p
 You can install and run the entire setup with a single command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/catamsp/capsd-termux/main/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/catamsp/capsd-termux/refs/heads/main/install.sh | bash
 
 ```
 
