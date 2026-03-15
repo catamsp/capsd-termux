@@ -52,3 +52,8 @@ Prompt settings: ~/.config/starship.toml
 Color scheme: ~/.termux/colors.properties
 
 Keyboard layout: ~/.termux/termux.properties
+
+### 📸 Screenshots
+![Terminal View 1](Screenshot_20260315_225749.jpg)
+![Terminal View 2](Screenshot_20260315_225847.jpg)
+![Terminal View 3](Screenshot_20260315_230218.jpg)
