@@ -6,7 +6,9 @@
 set -e
 
 echo "Updating packages..."
-pkg update && pkg upgrade -y
+pkg update -y
+# The following line automatically accepts the maintainer's new configuration files
+pkg upgrade -y -o Dpkg::Options::="--force-confnew"
 
 echo "Installing dependencies..."
 pkg install zsh starship zoxide fzf eza bat fastfetch git curl -y
