@@ -130,3 +130,16 @@ echo "-------------------------------------------------------"
 echo "Setup complete! Please restart Termux for all changes to take effect."
 echo "Note: If you want to use the custom font, place your font.ttf in ~/.termux/ and run termux-reload-settings."
 echo "-------------------------------------------------------"
+
+# Setup storage (Note: this still requires manual user confirmation the first time)
+termux-setup-storage
+
+# Copy custom font if it exists
+if [ -f "$HOME/storage/downloads/JetBrainMono/JetBrainsMonoNLNerdFont-Regular.ttf" ]; then
+    echo "Installing JetBrains Mono Nerd Font..."
+    cp "$HOME/storage/downloads/JetBrainMono/JetBrainsMonoNLNerdFont-Regular.ttf" "$HOME/.termux/font.ttf"
+fi
+
+# clear welcome text
+touch ~/.hushlogin
+
